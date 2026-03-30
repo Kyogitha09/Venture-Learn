@@ -35,3 +35,6 @@ Desktop.ini
 
 # local tooling folders
 .sfdx/
+*.log
+*.err
+.env
