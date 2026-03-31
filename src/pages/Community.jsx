@@ -15,7 +15,7 @@ import {
   loadStartupInterests,
   verifyStartupSafety,
 } from "../services/storage.js";
-
+//works as import for exports
 export default function Community() {
   const [feed, setFeed] = useState([]);
   const [loading, setLoading] = useState(true);
