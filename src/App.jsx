@@ -1,4 +1,25 @@
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App.jsx";
+import { ThemeProvider } from "./components/theme/ThemeProvider.jsx";
+import "./index.css";  
+import { Navigate, Route, Routes } from "react-router-dom";
+import Landing from "./pages/Landing.jsx";
+import Home from "./pages/Home.jsx";
+import Simulation from "./pages/Simulation.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
+import Community from "./pages/Community.jsx";
+import Discover from "./pages/Discover.jsx";
+import Interested from "./pages/Interested.jsx";
+import Investor from "./pages/Investor.jsx";
+import Messages from "./pages/Messages.jsx";
+import MyStartup from "./pages/MyStartup.jsx";
+import Resources from "./pages/Resources.jsx";
+import Profile from "./pages/Profile.jsx";
+import Settings from "./pages/Settings.jsx";
+import Views from "./pages/Views.jsx";
+import { getSessionUser } from "./services/storage.js";
 
 function ProtectedRoute({ children, allowedTypes }) {
   const user = getSessionUser();
