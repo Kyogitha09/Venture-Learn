@@ -38,3 +38,5 @@ Desktop.ini
 *.log
 *.err
 .env
+
+.vercel
