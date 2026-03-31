@@ -30,7 +30,13 @@ function ProtectedRoute({ children, allowedTypes }) {
 }
 
 function LandingRoute() {
-  return getSessionUser() ? <Navigate to="/home" replace /> : <Landing />;
+  const user = getSessionUser();
+
+  if (!user) {
+    return <Landing />;
+  }
+
+  return <div style={{color: "white"}}>User logged in</div>;
 }
 
 export default function App() {
