@@ -1,6 +1,6 @@
 import { sectorOptions } from "./mockData.js";
 
-export const accountTypes = ["owner", "investor", "user"];
+
 export const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 export const passwordPattern = /^(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$/;
 export const linkedInPattern = /^https?:\/\/(www\.)?linkedin\.com\/.+/i;
