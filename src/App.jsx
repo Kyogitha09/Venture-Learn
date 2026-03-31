@@ -19,8 +19,8 @@ function ProtectedRoute({ children, allowedTypes }) {
   const user = getSessionUser();
 
   if (!user) {
-    return <Navigate to="/" replace />;
-  }
+  return <div style={{color: "white"}}>Please login first</div>;
+}
 
   if (allowedTypes && !allowedTypes.includes(user.userType)) {
     return <Navigate to="/home" replace />;
